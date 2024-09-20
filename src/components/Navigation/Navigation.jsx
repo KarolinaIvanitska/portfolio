@@ -1,16 +1,37 @@
-import css from "./Navigation.module.css"
-
+import css from './Navigation.module.css';
+import { Link } from 'react-scroll';
 const Navigation = () => {
   return (
-    <div>
+    <header className={css.main_navigation}>
+      <div className={css.logoContainer}>
+        <img
+          src="/src/images/me.jpg"
+          className={css.logoimg}
+          width={60}
+          alt="logo image"
+        />
+      </div>
+      <nav>
         <ul className={css.navigation}>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Project</li>
-        <li>Contact</li>
-    </ul>
-    </div>
-  )
-}
+          <li>
+            <Link to="/contact" className={css.link}>
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link to="/" className={css.link}>
+              Projects
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className={css.link}>
+              Download CV
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
 
 export default Navigation;

@@ -1,3 +1,64 @@
-.navigation {
+.main_navigation {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #1f026d, #b00499);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Josefin', sans-serif;
+}
+
+/* Логотип */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.logoimg {
+  border-radius: 30%;
+  border: 2px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.logoimg:hover {
+  transform: scale(1.1);
+}
+
+/* Посилання */
+.link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 15px 20px;
+  border-radius: 25px;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: rgba(255, 255, 255, 0.344);
+  cursor: pointer;
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* Адаптивний дизайн для мобільних пристроїв */
+@media (max-width: 768px) {
+  .logoContainer {
+    margin-bottom: 20px;
+  }
+
+  .link {
+    padding: 12px 20px;
+  }
 }

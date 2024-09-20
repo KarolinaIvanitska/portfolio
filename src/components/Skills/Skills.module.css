@@ -1,0 +1,34 @@
+.section_skills {
+  height: 100vh;
+  width: 100%;
+  background: rgb(250 237 253);
+  text-align: center;
+}
+.skills_container {
+  padding: 40px;
+}
+.skills_cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.card p {
+  font-size: 16px;
+  color: #666;
+}
