@@ -40,7 +40,6 @@
   font-family: 'Josefin', sans-serif;
   font-size: 20px;
   color: var(--header-background);
-  width: 700px;
   line-height: normal;
   align-items: center;
   text-align: justify;
@@ -49,4 +48,5 @@
   border-radius: 20px;
   padding: 20px;
   margin: -140px 0 0 480px;
+  width: 700px;
 }
