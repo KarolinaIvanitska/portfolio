@@ -2,11 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #1f026d, #b00499);
+  background: linear-gradient(45deg, #130428, #251043, #38126d, #261045);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
+@keyframes color {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .navigation {
   list-style: none;
   display: flex;
@@ -20,8 +31,10 @@
 /* Логотип */
 .logoContainer {
   display: flex;
-  align-items: center;
   margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
 }
 
 .logoimg {
@@ -32,7 +45,7 @@
 }
 
 .logoimg:hover {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 /* Посилання */
